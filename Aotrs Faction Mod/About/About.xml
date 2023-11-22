@@ -22,6 +22,9 @@
 			<downloadUrl>https://github.com/erdelf/AlienRaces/wiki</downloadUrl>
         </li>
 		<li>
+			<packageId>vanillaracesexpanded.customicons</packageId>
+			<displayName>Vanilla Races Expanded - Custom Icons</displayName>
+		</li>		<li>
 			<packageId>Mlie.WaSkeleton</packageId>
 			<displayName>Wa! Skeleton! (Continued)</displayName>
 		</li>

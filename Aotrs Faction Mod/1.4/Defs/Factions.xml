@@ -39,9 +39,7 @@
 	<xenotypeSet Inherit="False">
       <xenotypeChances>
         <Aotrs_AniSkel>0.65</Aotrs_AniSkel>
-        <DRSKT_Race MayRequire="mlie.waskeleton">0.13</DRSKT_Race>
-        <DRSKT_Race_Zombie MayRequire="mlie.waskeleton">0.15</DRSKT_Race_Zombie>		
-        <Aotrs_Lich>0.02</Aotrs_Lich>	
+	    <Aotrs_Lich>0.02</Aotrs_Lich>	
         <VU_Ghoul MayRequire="redmattis.undead">0.05</VU_Ghoul>
 		</xenotypeChances>
       <warnIfTotalAbove1>false</warnIfTotalAbove1>
