@@ -2,7 +2,7 @@
 <ModMetaData>
     <name>Aotrs Faction</name>
     <author>Aotrs Commander</author>
-    <packageId>username.modcategory.modname</packageId>
+    <packageId>Aotrs_Faction_Mod</packageId>
     <supportedVersions>
         <li>1.4</li>
     </supportedVersions>
