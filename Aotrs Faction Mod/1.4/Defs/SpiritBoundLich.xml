@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>Aotrs_Lich</defName>
+    <label>Spirit-Bound Lich</label>
+    <description>Spirit-Bound Liches are created by binding the soul to a dead body in a manner similar, but exclusive to, resurrection magic. Spirit-Bound Liches must always thus be created. The soul effectively "haunts" the body, in a fashion not unlike how haunted structures function, granting the Spirit-Bound Lich significantly greater abilities than a merely animated skeleton.</description>
+    <descriptionShort>A self-willed skeleton created by necromantic magic.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon34</iconPath>
+    <inheritable>false</inheritable>
+    <combatPowerFactor>1.0</combatPowerFactor>
+    <genes>
+		<li>ArchiteMetabolism</li>
+		<li>BS_Fast_TotalHealing</li>
+		<li>VU_Unliving</li>
+		<li>BS_Deathlike</li>
+		<li>VU_Lesser_Unliving_Resilience</li>
+		<li>AG_ColdImmunity</li>
+		<li>AG_ColdRadiating</li>
+		<li>DarkVision</li>
+		<li>Sterile</li>
+		<li>GEG_Eyes_GlowingRed</li>
+		<li>BS_Xenolocked</li>
+		<li>AG_DeadlyRaidPresence</li>
+		</genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>Aotrs_AniSkel</defName>
+    <label>Animated Skeleton</label>
+    <description>Skeletons created by Animate Dead spells are little more than negative energy-powered constructs.</description>
+    <descriptionShort>A mindless skeleton created by necromantic magic.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon34</iconPath>
+    <inheritable>false</inheritable>
+    <combatPowerFactor>1.0</combatPowerFactor>
+    <genes>
+		<li>BS_Deathlike</li>
+		<li>VU_Lesser_Unliving_Resilience</li>
+		<li>VU_Unliving</li>
+		<li>Aggression_DeadCalm</li>
+		<li>BS_Pain_None</li>
+		<li>Sterile</li>
+		<li>BS_Xenolocked</li>
+		<li>BS_Learning_None</li>
+		<li>DarkVision</li>
+		<li>AptitudeTerrible_Artistic</li>
+		<li>AptitudeTerrible_Social</li>
+		<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+  </XenotypeDef>
+</Defs>

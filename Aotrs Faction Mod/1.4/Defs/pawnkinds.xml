@@ -1,0 +1,304 @@
+<Defs>
+  <PawnKindDef Name="Aotrs_SkeleHostWarrior">
+    <defName>Aotrs_SkeleHostWarrior</defName>
+    <label>roaming skeleton</label>
+    <combatPower>60</combatPower>
+    <race>DRSKT_Race</race>
+    <defaultFactionType>Aotrs_SkeletonHorde</defaultFactionType>
+    <maxGenerationAge>100</maxGenerationAge>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invNutrition>0</invNutrition>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>MedievalMilitary</li>
+      <li>Neolithic</li>
+      <li>DankPyon_Peasant</li>
+      <li>DankPyon_PeasantHelmet</li>
+    </apparelTags>
+
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.2~1.1</gearHealthRange>
+    <apparelMoney>0~600</apparelMoney>
+    <weaponMoney>100~300</weaponMoney>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+      <li>NeolithicMeleeBasic</li>
+      <li>NeolithicMeleeDecent</li>
+      <li>NeolithicMeleeAdvanced</li>
+    </weaponTags>
+    <techHediffsMoney>50~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.05</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>40~50</initialResistanceRange>
+    <factionLeader>false</factionLeader>
+
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Aotrs_AniSkel>1</Aotrs_AniSkel>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+	
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <styleItemTags>
+      <li>
+        <tag>Rural</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Urban</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Punk</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+      <li>
+        <tag>Tribal</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~5</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>0~5</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
+    <defName>Aotrs_SkeletalWarrior</defName>
+    <label>skeletal warrior</label>
+    <combatPower>75</combatPower>
+    <maxGenerationAge>110</maxGenerationAge>
+    <invNutrition>5</invNutrition>    
+	<chemicalAddictionChance>0</chemicalAddictionChance>
+	
+    <apparelTags Inherit="False">
+      <li>MedievalArmorBasic</li>
+      <li>MedievalArmorDecent</li>
+      <li>MedievalArmorElite</li>
+      <li>MedievalMilitary</li>
+      
+    </apparelTags>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.3~1.1</gearHealthRange>
+    <apparelMoney>500~2000</apparelMoney>
+    <weaponMoney>300~1200</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <techHediffsMoney>200~2000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.05</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>40~50</initialResistanceRange>
+
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <styleItemTags Inherit="False">
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~12</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>0~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
+    <defName>Aotrs_SkeleSoldier</defName>
+    <label>skeletal soldier</label>
+    <combatPower>75</combatPower>
+    <maxGenerationAge>110</maxGenerationAge>
+    <invNutrition>5</invNutrition>
+    <apparelTags Inherit="False">
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_Pants</li>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_AdvancedHelmet</li>
+    </apparelRequired>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.3~1.1</gearHealthRange>
+    <apparelMoney>500~2000</apparelMoney>
+    <weaponMoney>306~600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsMoney>500~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.05</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>40~50</initialResistanceRange>
+
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <styleItemTags Inherit="False">
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~12</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>0~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <!-- Leaders -->
+
+  <PawnKindDef Name="Aotrs_SkeleChamp" ParentName="Aotrs_SkeleHostWarrior">
+    <defName>Aotrs_SkeleChamp</defName>
+    <label>Skeletal Champion</label>
+    <combatPower>100</combatPower>
+    <race>DRSKT_Race</race>
+    <defaultFactionType>Aotrs_SkeletonHorde</defaultFactionType>
+    <maxGenerationAge>1000</maxGenerationAge>
+    <invNutrition>5</invNutrition>
+	<xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <Aotrs_AniSkel>0.00001</Aotrs_AniSkel>
+        <Aotrs_Lich>0.2</Aotrs_Lich>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+    <apparelTags Inherit="False">
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>MedievalArmorElite</li>
+    </apparelTags>
+    <itemQuality>Normal</itemQuality>
+    <gearHealthRange>0.3~1.1</gearHealthRange>
+    <apparelMoney>50~2000</apparelMoney>
+    <weaponMoney>100~2700</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeDecent</li>
+      <li>MedievalMeleeAdvanced</li>
+      <li>LongSword</li>
+      <li>UltratechMelee</li>
+      <li>DankPyon_Greatsword</li>
+      <li>DankPyon_NamedGreataxe</li>
+    </weaponTags>
+    <techHediffsMoney>200~4000</techHediffsMoney>
+    <techHediffsTags Inherit="False">
+      <li>Poor</li>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.10</techHediffsChance>
+    <initialWillRange>0~3</initialWillRange>
+    <initialResistanceRange>12~25</initialResistanceRange>
+
+    <useFactionXenotypes>false</useFactionXenotypes>
+
+    <styleItemTags Inherit="False">
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>6~20</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>6~20</range>
+      </li>
+    </skills>
+    <factionLeader>false</factionLeader>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Aotrs_SkeleChamp">
+    <defName>Aotrs_SkeleSerge</defName>
+    <label>Skeletal Sergeant</label>
+    <weaponMoney>1000~2500</weaponMoney>
+    <apparelTags Inherit="False">
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_Pants</li>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_AdvancedHelmet</li>
+    </apparelRequired>
+    <weaponTags Inherit="False">
+      <li>Gun</li>
+    </weaponTags>
+    <apparelColor>0.8,0.1,0.1</apparelColor>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Aotrs_SkeleChamp">
+    <defName>Aotrs_SkeleMaster</defName>
+    <label>host commander</label>
+    <combatPower>150</combatPower>
+    <maxGenerationAge>1000</maxGenerationAge>
+
+	<apparelTags Inherit="False">
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>UltratechMelee</li>
+      <li>MedievalArmorElite</li>
+    </apparelTags>
+    <gearHealthRange>0.5~1.1</gearHealthRange>
+    <apparelMoney>1000~4000</apparelMoney>
+    <weaponMoney>900~2700</weaponMoney>
+    <techHediffsMoney>2000~8000</techHediffsMoney>
+    <techHediffsChance>0.25</techHediffsChance>
+    <initialWillRange>0~5</initialWillRange>
+    <initialResistanceRange>18~25</initialResistanceRange>
+
+    <factionLeader>true</factionLeader>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~20</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>12~20</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+</Defs>
