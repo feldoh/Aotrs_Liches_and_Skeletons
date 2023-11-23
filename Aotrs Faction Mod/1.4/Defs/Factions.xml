@@ -38,7 +38,8 @@
     <canSiege>false</canSiege>
 	<xenotypeSet Inherit="False">
       <xenotypeChances>
-        <Aotrs_AniSkel>0.65</Aotrs_AniSkel>
+        <Aotrs_AniSkel>0.9</Aotrs_AniSkel>
+        <Aotrs_AniZom>0.9</Aotrs_AniZom>
 	    <Aotrs_Lich>0.02</Aotrs_Lich>	
         <VU_Ghoul MayRequire="redmattis.undead">0.05</VU_Ghoul>
 		</xenotypeChances>
@@ -58,7 +59,8 @@
         <kindDef>Combat</kindDef>
         <commonality>40</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>1</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>1</Aotrs_HostZombie>
         </options>
       </li>
 
@@ -67,8 +69,9 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>5</Aotrs_SkeleHostWarrior>
-          <Aotrs_SkeleChamp>1</Aotrs_SkeleChamp>
+          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>1</Aotrs_HostZombie>
+          <Aotrs_SkeleChamp>2</Aotrs_SkeleChamp>
         </options>
       </li>
 
@@ -105,11 +108,12 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>2</Aotrs_SkeleHostWarrior>
-          <Aotrs_SkeletalWarrior>2</Aotrs_SkeletalWarrior>
-          <Aotrs_SkeleSoldier>2</Aotrs_SkeleSoldier>
-          <Aotrs_SkeleChamp>5</Aotrs_SkeleChamp>
-          <Aotrs_SkeleMaster>1</Aotrs_SkeleMaster>
+          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
+          <Aotrs_HostZombie>1</Aotrs_HostZombie>		  
+          <Aotrs_SkeletalWarrior>10</Aotrs_SkeletalWarrior>
+          <Aotrs_SkeleSoldier>10</Aotrs_SkeleSoldier>
+          <Aotrs_SkeleChamp>25</Aotrs_SkeleChamp>
+          <Aotrs_SkeleMaster>5</Aotrs_SkeleMaster>
         </options>
       </li>
 
@@ -118,7 +122,8 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>10</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>1</Aotrs_HostZombie>
           <Aotrs_SkeletalWarrior>10</Aotrs_SkeletalWarrior>
           <Aotrs_SkeleSoldier>10</Aotrs_SkeleSoldier>
           <Aotrs_SkeleChamp>5</Aotrs_SkeleChamp>
@@ -131,11 +136,12 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>2</Aotrs_SkeleHostWarrior>
-          <Aotrs_SkeletalWarrior>2</Aotrs_SkeletalWarrior>
-          <Aotrs_SkeleSoldier>2</Aotrs_SkeleSoldier>
-          <Aotrs_SkeleChamp>5</Aotrs_SkeleChamp>
-          <Aotrs_SkeleMaster>1</Aotrs_SkeleMaster>
+          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>1</Aotrs_HostZombie>
+          <Aotrs_SkeletalWarrior>10</Aotrs_SkeletalWarrior>
+          <Aotrs_SkeleSoldier>10</Aotrs_SkeleSoldier>
+          <Aotrs_SkeleChamp>25</Aotrs_SkeleChamp>
+          <Aotrs_SkeleMaster>5</Aotrs_SkeleMaster>
         </options>
       </li>
       <li>
@@ -170,16 +176,18 @@
           <Elephant>2</Elephant>
         </carriers>
         <guards>
-          <Aotrs_SkeleHostWarrior>7</Aotrs_SkeleHostWarrior>
-          <Aotrs_SkeleChamp>7</Aotrs_SkeleChamp>
+          <Aotrs_SkeleHostWarrior>63</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>7</Aotrs_HostZombie>
+          <Aotrs_SkeleChamp>70</Aotrs_SkeleChamp>
         </guards>
       </li>
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Aotrs_SkeleHostWarrior>7</Aotrs_SkeleHostWarrior>
-          <Aotrs_SkeleChamp>7</Aotrs_SkeleChamp>
-          <Aotrs_SkeleMaster>5</Aotrs_SkeleMaster>
+          <Aotrs_SkeleHostWarrior>63</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>7</Aotrs_HostZombie>
+          <Aotrs_SkeleChamp>70</Aotrs_SkeleChamp>
+          <Aotrs_SkeleMaster>50</Aotrs_SkeleMaster>
         </options>
       </li>
       <li MayRequire="Ludeon.RimWorld.Ideology">

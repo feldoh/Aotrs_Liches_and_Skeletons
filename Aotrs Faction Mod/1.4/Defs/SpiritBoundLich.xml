@@ -47,4 +47,28 @@
 		<li>AptitudeTerrible_Intellectual</li>
 		</genes>
   </XenotypeDef>
+  
+    <XenotypeDef>
+    <defName>Aotrs_AniZom</defName>
+    <label>Animated Zombie</label>
+    <description>Zombies created by Animate Dead spells are little more than negative energy-powered constructs.</description>
+    <descriptionShort>A mindless zombie created by necromantic magic.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon34</iconPath>
+    <inheritable>false</inheritable>
+    <combatPowerFactor>1.0</combatPowerFactor>
+    <genes>
+		<li>BS_Deathlike</li>
+		<li>VU_Lesser_Unliving_Resilience</li>
+		<li>VU_Unliving</li>
+		<li>Aggression_DeadCalm</li>
+		<li>BS_Pain_None</li>
+		<li>Sterile</li>
+		<li>BS_Xenolocked</li>
+		<li>BS_Learning_None</li>
+		<li>DarkVision</li>
+		<li>AptitudeTerrible_Artistic</li>
+		<li>AptitudeTerrible_Social</li>
+		<li>AptitudeTerrible_Intellectual</li>
+		</genes>
+  </XenotypeDef>
 </Defs>

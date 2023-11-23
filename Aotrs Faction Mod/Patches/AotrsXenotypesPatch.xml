@@ -11,5 +11,14 @@
 	</value>
 </Operation>
 
+<Operation Class="PatchOperationAdd">
+  <xpath>Defs/AlienRace.ThingDef_AlienRace[defName="DRSKT_Race_Zombie"]/alienRace/raceRestriction</xpath>
+	<value>
+		<xenotypeList>
+			<li>Aotrs_AniZom</li>
+		</xenotypeList>
+	</value>
+</Operation>
+
 </Patch>
 
