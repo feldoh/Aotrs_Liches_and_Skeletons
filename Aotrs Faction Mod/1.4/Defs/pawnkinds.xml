@@ -4,7 +4,7 @@
   
   <PawnKindDef Name="Aotrs_AniUndeadBase">
     <defName>Aotrs_AniUndeadBase</defName>
-    <label>roaming skeleton</label>
+    <label>roaming animated undead</label>
     <combatPower>60</combatPower>
     <race>DRSKT_Race</race>
     <defaultFactionType>Aotrs_SkeletonHorde</defaultFactionType>
@@ -80,7 +80,7 @@
       </xenotypeChances>
       <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
-	   <skills>
+	<skills>
       <li>
         <skill>Shooting</skill>
         <range>0~5</range>
@@ -129,7 +129,7 @@
         <skill>Intellectual</skill>
         <range>0~0</range>
       </li>	  
-	  </skills>
+	</skills>
 	<!--backstoryFiltersOverride>
 		  <li>
 			<categories>

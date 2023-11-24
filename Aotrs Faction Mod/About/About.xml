@@ -26,6 +26,10 @@
 			<displayName>Vanilla Races Expanded - Custom Icons</displayName>
 		</li>
 		<li>
+			<packageId>RedMattis.Undead</packageId>
+			<displayName>Vampires, Demons, and the Undead</displayName>
+		</li>
+		<li>
 			<packageId>Mlie.WaSkeleton</packageId>
 			<displayName>Wa! Skeleton! (Continued)</displayName>
 		</li>
@@ -34,7 +38,7 @@
         <li>Ludeon.RimWorld.Biotech</li>
 		<li>brrainz.harmony</li>
 		<li>vanillaracesexpanded.customicons</li>
-		<li>RedMattis.BigSmall.Core</li>
+		<li>RedMattis.Undead</li>
 		<li>Mlie.WaSkeleton</li>
     </loadAfter>
     <description>Add Aotrs-built factions</description>
