@@ -38,10 +38,10 @@
     <canSiege>false</canSiege>
 	<xenotypeSet Inherit="False">
       <xenotypeChances>
-        <Aotrs_AniSkel>0.9</Aotrs_AniSkel>
-        <Aotrs_AniZom>0.9</Aotrs_AniZom>
-	    <Aotrs_Lich>0.02</Aotrs_Lich>	
-        <VU_Ghoul MayRequire="redmattis.undead">0.05</VU_Ghoul>
+        <Aotrs_AniSkel>0.79</Aotrs_AniSkel>
+        <Aotrs_AniZom>0.05</Aotrs_AniZom>
+	    <Aotrs_Lich>0.11</Aotrs_Lich>	
+        <VU_Ghoul MayRequire="redmattis.undead">0.03</VU_Ghoul>
 		</xenotypeChances>
       <warnIfTotalAbove1>false</warnIfTotalAbove1>
 	</xenotypeSet>
@@ -54,28 +54,30 @@
     </maxPawnCostPerTotalPointsCurve>
 
     <pawnGroupMakers Inherit="False">
-      <!-- Just simple undead -->
+      <!-- Basic horde -->
       <li>
         <kindDef>Combat</kindDef>
         <commonality>40</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
-		  <Aotrs_HostZombie>1</Aotrs_HostZombie>
+          <Aotrs_SkeleHostWarrior>17</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>2</Aotrs_HostZombie>
+		  <Aotrs_HostGhoul>1</Aotrs_HostGhoul>
         </options>
       </li>
 
-      <!-- Basic undead + a few leaders -->
+      <!-- Horde with leaders -->
       <li>
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
-		  <Aotrs_HostZombie>1</Aotrs_HostZombie>
-          <Aotrs_SkeleChamp>2</Aotrs_SkeleChamp>
-        </options>
+          <Aotrs_SkeleHostWarrior>17</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>2</Aotrs_HostZombie>
+          <Aotrs_SkeleChamp>5</Aotrs_SkeleChamp>
+		  <Aotrs_HostGhoul>1</Aotrs_HostGhoul>
+		  </options>
       </li>
 
-      <!-- Horde of undead soldiers -->
+      <!-- skeleton warriors -->
       <li>
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
@@ -84,7 +86,7 @@
         </options>
       </li>
       
-      <!-- Undead company of soldiers-->
+      <!-- skeleton soldiers-->
       <li>
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
@@ -93,23 +95,22 @@
         </options>
       </li>
 
-      <!-- Undead company of soldiers with a leader-->
+      <!-- skeleton soldiers with a leader-->
       <li>
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleSoldier>5</Aotrs_SkeleSoldier>
+          <Aotrs_SkeleSoldier>4</Aotrs_SkeleSoldier>
           <Aotrs_SkeleSerge>1</Aotrs_SkeleSerge>
         </options>
       </li>
 
-      <!-- Lots of leaders -->
+      <!-- Major Skeleton horde -->
       <li>
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
-          <Aotrs_HostZombie>1</Aotrs_HostZombie>		  
+          <Aotrs_SkeleHostWarrior>10</Aotrs_SkeleHostWarrior>
           <Aotrs_SkeletalWarrior>10</Aotrs_SkeletalWarrior>
           <Aotrs_SkeleSoldier>10</Aotrs_SkeleSoldier>
           <Aotrs_SkeleChamp>25</Aotrs_SkeleChamp>
@@ -117,39 +118,43 @@
         </options>
       </li>
 
-      <!-- Mixed and a few leaders -->
+      <!-- Mixed horde -->
       <li>
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
-		  <Aotrs_HostZombie>1</Aotrs_HostZombie>
-          <Aotrs_SkeletalWarrior>10</Aotrs_SkeletalWarrior>
-          <Aotrs_SkeleSoldier>10</Aotrs_SkeleSoldier>
-          <Aotrs_SkeleChamp>5</Aotrs_SkeleChamp>
-          <Aotrs_SkeleMaster>1</Aotrs_SkeleMaster>
+          <Aotrs_SkeleHostWarrior>17</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>2</Aotrs_HostZombie>
+		  <Aotrs_HostGhoul>1</Aotrs_HostGhoul>
+          <Aotrs_SkeletalWarrior>19</Aotrs_SkeletalWarrior>
+          <Aotrs_SkeleSoldier>19</Aotrs_SkeleSoldier>
+          <Aotrs_SkeleChamp>9</Aotrs_SkeleChamp>
+          <Aotrs_GtrGhoul>1</Aotrs_GtrGhoul>
+          <Aotrs_SkeleMaster>2</Aotrs_SkeleMaster>
         </options>
       </li>
 
       <li>
-        <!-- Lots of leaders -->
+        <!-- Major mixed horde -->
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>9</Aotrs_SkeleHostWarrior>
-		  <Aotrs_HostZombie>1</Aotrs_HostZombie>
-          <Aotrs_SkeletalWarrior>10</Aotrs_SkeletalWarrior>
-          <Aotrs_SkeleSoldier>10</Aotrs_SkeleSoldier>
-          <Aotrs_SkeleChamp>25</Aotrs_SkeleChamp>
-          <Aotrs_SkeleMaster>5</Aotrs_SkeleMaster>
+          <Aotrs_SkeleHostWarrior>17</Aotrs_SkeleHostWarrior>
+		  <Aotrs_HostZombie>2</Aotrs_HostZombie>
+ 		  <Aotrs_HostGhoul>1</Aotrs_HostGhoul>
+		  <Aotrs_SkeletalWarrior>20</Aotrs_SkeletalWarrior>
+          <Aotrs_SkeleSoldier>20</Aotrs_SkeleSoldier>
+          <Aotrs_SkeleChamp>45</Aotrs_SkeleChamp>
+          <Aotrs_GtrGhoul>5</Aotrs_GtrGhoul>
+          <Aotrs_SkeleMaster>10</Aotrs_SkeleMaster>
         </options>
       </li>
       <li>
-        <!-- Only leaders -->
+        <!-- Skeleton champions -->
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleChamp>10</Aotrs_SkeleChamp>
+          <Aotrs_SkeleChamp>9</Aotrs_SkeleChamp>
           <Aotrs_SkeleMaster>1</Aotrs_SkeleMaster>
         </options>
       </li>
