@@ -40,13 +40,7 @@
     <initialResistanceRange>40~50</initialResistanceRange>
     <factionLeader>false</factionLeader>
 	<useFactionXenotypes>false</useFactionXenotypes>
-    <xenotypeSet Inherit="False">
-      <xenotypeChances>
-        <Aotrs_AniSkel>1</Aotrs_AniSkel>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-    </xenotypeSet>
-	
+ 	
     <requiredWorkTags>
       <li>Violent</li>
     </requiredWorkTags>
@@ -82,7 +76,7 @@
     <useFactionXenotypes>false</useFactionXenotypes>
 	<xenotypeSet Inherit="False">
       <xenotypeChances>
-        <Aotrs_AniZom>1</Aotrs_AniZom>
+        <Aotrs_AniSkel>1</Aotrs_AniSkel>
       </xenotypeChances>
       <warnIfTotalAbove1>false</warnIfTotalAbove1>
     </xenotypeSet>
@@ -156,7 +150,79 @@
       </xenotypeChances>
       <warnIfTotalAbove1>false</warnIfTotalAbove1>
 	</xenotypeSet>
-	</PawnKindDef>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="Aotrs_AniUndeadBase">
+    <defName>Aotrs_HostGhoul</defName>
+    <label>roaming ghoul</label>
+    <race>Human</race>
+    <useFactionXenotypes>false</useFactionXenotypes>
+	<xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <VU_Ghoul MayRequire="redmattis.undead">1</VU_Ghoul>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+	</xenotypeSet>
+      <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~5</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>0~5</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+	
+  <PawnKindDef ParentName="Aotrs_HostGhoul">
+    <defName>Aotrs_GtrGhoul</defName>
+    <label>greater ghoul</label>
+    <combatPower>75</combatPower>
+    <maxGenerationAge>110</maxGenerationAge>
+    <invNutrition>5</invNutrition>
+    <apparelTags Inherit="False">
+      <li>IndustrialMilitaryBasic</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_Pants</li>
+      <li>Apparel_BasicShirt</li>
+      <li>Apparel_AdvancedHelmet</li>
+    </apparelRequired>
+    <itemQuality>Poor</itemQuality>
+    <gearHealthRange>0.3~1.1</gearHealthRange>
+    <apparelMoney>500~2000</apparelMoney>
+    <weaponMoney>306~600</weaponMoney>
+    <weaponTags Inherit="False">
+      <li>Gun</li>
+    </weaponTags>
+    <techHediffsMoney>500~1500</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <techHediffsChance>0.05</techHediffsChance>
+    <initialWillRange>0~1</initialWillRange>
+    <initialResistanceRange>40~50</initialResistanceRange>
+
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <styleItemTags Inherit="False">
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~12</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>0~12</range>
+      </li>
+    </skills>
+  </PawnKindDef>
 
   <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
     <defName>Aotrs_SkeletalWarrior</defName>

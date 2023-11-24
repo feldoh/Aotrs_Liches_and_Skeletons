@@ -24,7 +24,8 @@
 		<li>
 			<packageId>vanillaracesexpanded.customicons</packageId>
 			<displayName>Vanilla Races Expanded - Custom Icons</displayName>
-		</li>		<li>
+		</li>
+		<li>
 			<packageId>Mlie.WaSkeleton</packageId>
 			<displayName>Wa! Skeleton! (Continued)</displayName>
 		</li>
@@ -32,6 +33,7 @@
     <loadAfter>
         <li>Ludeon.RimWorld.Biotech</li>
 		<li>brrainz.harmony</li>
+		<li>vanillaracesexpanded.customicons</li>
 		<li>RedMattis.BigSmall.Core</li>
 		<li>Mlie.WaSkeleton</li>
     </loadAfter>
