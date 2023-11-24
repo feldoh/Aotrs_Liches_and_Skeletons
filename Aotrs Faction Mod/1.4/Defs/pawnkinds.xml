@@ -159,7 +159,7 @@
     <useFactionXenotypes>false</useFactionXenotypes>
 	<xenotypeSet Inherit="False">
       <xenotypeChances>
-        <VU_Ghoul MayRequire="redmattis.undead">1</VU_Ghoul>
+        <VU_Ghoul MayRequire="RedMattis.Undead">1</VU_Ghoul>
       </xenotypeChances>
       <warnIfTotalAbove1>false</warnIfTotalAbove1>
 	</xenotypeSet>
