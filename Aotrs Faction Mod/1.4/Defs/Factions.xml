@@ -41,7 +41,6 @@
         <Aotrs_AniSkel>0.79</Aotrs_AniSkel>
         <Aotrs_AniZom>0.05</Aotrs_AniZom>
 	    <Aotrs_Lich>0.11</Aotrs_Lich>	
-        <VU_Ghoul MayRequire="redmattis.undead">0.03</VU_Ghoul>
 		</xenotypeChances>
       <warnIfTotalAbove1>false</warnIfTotalAbove1>
 	</xenotypeSet>
@@ -59,9 +58,8 @@
         <kindDef>Combat</kindDef>
         <commonality>40</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>17</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleMindless>17</Aotrs_SkeleMindless>
 		  <Aotrs_HostZombie>2</Aotrs_HostZombie>
-		  <Aotrs_HostGhoul>1</Aotrs_HostGhoul>
         </options>
       </li>
 
@@ -70,10 +68,9 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>17</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleMindless>17</Aotrs_SkeleMindless>
 		  <Aotrs_HostZombie>2</Aotrs_HostZombie>
           <Aotrs_SkeleChamp>5</Aotrs_SkeleChamp>
-		  <Aotrs_HostGhoul>1</Aotrs_HostGhoul>
 		 </options>
       </li>
 
@@ -110,7 +107,7 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>10</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleMindless>10</Aotrs_SkeleMindless>
           <Aotrs_SkeletalWarrior>10</Aotrs_SkeletalWarrior>
           <Aotrs_SkeleSoldier>10</Aotrs_SkeleSoldier>
           <Aotrs_SkeleChamp>25</Aotrs_SkeleChamp>
@@ -123,13 +120,11 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>17</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleMindless>17</Aotrs_SkeleMindless>
 		  <Aotrs_HostZombie>2</Aotrs_HostZombie>
-		  <Aotrs_HostGhoul>1</Aotrs_HostGhoul>
           <Aotrs_SkeletalWarrior>19</Aotrs_SkeletalWarrior>
           <Aotrs_SkeleSoldier>19</Aotrs_SkeleSoldier>
           <Aotrs_SkeleChamp>9</Aotrs_SkeleChamp>
-          <Aotrs_GtrGhoul>1</Aotrs_GtrGhoul>
           <Aotrs_SkeleMaster>2</Aotrs_SkeleMaster>
         </options>
       </li>
@@ -139,13 +134,11 @@
         <kindDef>Combat</kindDef>
         <commonality>10</commonality>
         <options>
-          <Aotrs_SkeleHostWarrior>17</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleMindless>17</Aotrs_SkeleMindless>
 		  <Aotrs_HostZombie>2</Aotrs_HostZombie>
- 		  <Aotrs_HostGhoul>1</Aotrs_HostGhoul>
 		  <Aotrs_SkeletalWarrior>20</Aotrs_SkeletalWarrior>
           <Aotrs_SkeleSoldier>20</Aotrs_SkeleSoldier>
           <Aotrs_SkeleChamp>45</Aotrs_SkeleChamp>
-          <Aotrs_GtrGhoul>5</Aotrs_GtrGhoul>
           <Aotrs_SkeleMaster>10</Aotrs_SkeleMaster>
         </options>
       </li>
@@ -163,7 +156,7 @@
         <!-- Peaceful -->
         <kindDef>Peaceful</kindDef>
         <options>
-          <Aotrs_SkeleHostWarrior>8</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleMindless>8</Aotrs_SkeleMindless>
           <Aotrs_SkeleChamp>4</Aotrs_SkeleChamp>
           <Aotrs_SkeleMaster>1</Aotrs_SkeleMaster>
         </options>
@@ -181,7 +174,7 @@
           <Elephant>2</Elephant>
         </carriers>
         <guards>
-          <Aotrs_SkeleHostWarrior>63</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleMindless>63</Aotrs_SkeleMindless>
 		  <Aotrs_HostZombie>7</Aotrs_HostZombie>
           <Aotrs_SkeleChamp>70</Aotrs_SkeleChamp>
         </guards>
@@ -189,7 +182,7 @@
       <li>
         <kindDef>Settlement</kindDef>
         <options>
-          <Aotrs_SkeleHostWarrior>63</Aotrs_SkeleHostWarrior>
+          <Aotrs_SkeleMindless>63</Aotrs_SkeleMindless>
 		  <Aotrs_HostZombie>7</Aotrs_HostZombie>
           <Aotrs_SkeleChamp>70</Aotrs_SkeleChamp>
           <Aotrs_SkeleMaster>50</Aotrs_SkeleMaster>

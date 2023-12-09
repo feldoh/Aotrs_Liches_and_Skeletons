@@ -2,9 +2,9 @@
 
   <!-- Base type so that animated undead don't block thinking undead skills -->
   
-  <PawnKindDef Name="Aotrs_AniUndeadBase">
-    <defName>Aotrs_AniUndeadBase</defName>
-    <label>roaming animated undead</label>
+  <PawnKindDef Name="Aotrs_SkeleHostWarrior">
+    <defName>Aotrs_SkeleHostWarrior</defName>
+    <label>roaming skeleton</label>
     <combatPower>60</combatPower>
     <race>DRSKT_Race</race>
     <defaultFactionType>Aotrs_SkeletonHorde</defaultFactionType>
@@ -39,8 +39,14 @@
     <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>40~50</initialResistanceRange>
     <factionLeader>false</factionLeader>
-	<useFactionXenotypes>false</useFactionXenotypes>
- 	
+
+    <xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Aotrs_AniSkel>1</Aotrs_AniSkel>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+    </xenotypeSet>
+	
     <requiredWorkTags>
       <li>Violent</li>
     </requiredWorkTags>
@@ -66,21 +72,7 @@
         <weightFactor>1</weightFactor>
       </li>
     </styleItemTags>
-   </PawnKindDef>
-  
-    <!-- Base mindless skeleton -->
-  
-    <PawnKindDef ParentName="Aotrs_AniUndeadBase">
-    <defName>Aotrs_SkeleHostWarrior</defName>
-    <label>roaming skeleton</label>
-    <useFactionXenotypes>false</useFactionXenotypes>
-	<xenotypeSet Inherit="False">
-      <xenotypeChances>
-        <Aotrs_AniSkel>1</Aotrs_AniSkel>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-    </xenotypeSet>
-	<skills>
+    <skills>
       <li>
         <skill>Shooting</skill>
         <range>0~5</range>
@@ -89,6 +81,21 @@
         <skill>Melee</skill>
         <range>0~5</range>
       </li>
+    </skills>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
+    <defName>Aotrs_HostZombie</defName>
+    <label>roaming zombie</label>
+    <race>DRSKT_Race_Zombie</race>
+    <useFactionXenotypes>false</useFactionXenotypes>
+	<xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Aotrs_AniZom>1</Aotrs_AniZom>
+      </xenotypeChances>
+      <warnIfTotalAbove1>false</warnIfTotalAbove1>
+	</xenotypeSet>
+		<skills>
 	    <li>
         <skill>Construction</skill>
         <range>0~5</range>
@@ -118,7 +125,7 @@
         <range>0~0</range>
       </li>
       <li>
-        <skill>Medical</skill>
+        <skill>Medicine</skill>
         <range>0~1</range>
       </li>
       <li>
@@ -130,100 +137,55 @@
         <range>0~0</range>
       </li>	  
 	</skills>
-	<!--backstoryFiltersOverride>
-		  <li>
-			<categories>
-			  <li>Aotrs_AniUndead</li>
-			</categories>
-		  </li>
-	</backstoryFiltersOverride -->
-	</PawnKindDef>
-
-  <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
-    <defName>Aotrs_HostZombie</defName>
-    <label>roaming zombie</label>
-    <race>DRSKT_Race_Zombie</race>
-    <useFactionXenotypes>false</useFactionXenotypes>
-	<xenotypeSet Inherit="False">
-      <xenotypeChances>
-        <Aotrs_AniZom>1</Aotrs_AniZom>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-	</xenotypeSet>
   </PawnKindDef>
   
-  <PawnKindDef ParentName="Aotrs_AniUndeadBase">
-    <defName>Aotrs_HostGhoul</defName>
-    <label>roaming ghoul</label>
-    <race>Human</race>
-    <useFactionXenotypes>false</useFactionXenotypes>
-	<xenotypeSet Inherit="False">
-      <xenotypeChances>
-        <VU_Ghoul MayRequire="RedMattis.Undead">1</VU_Ghoul>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-	</xenotypeSet>
-      <skills>
-      <li>
-        <skill>Shooting</skill>
+    <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
+    <defName>Aotrs_SkeleMindless</defName>
+    <label>mindless skeleton</label>
+	<skills>
+	    <li>
+        <skill>Construction</skill>
         <range>0~5</range>
       </li>
       <li>
-        <skill>Melee</skill>
+        <skill>Mining</skill>
         <range>0~5</range>
       </li>
-    </skills>
+      <li>
+        <skill>Cooking</skill>
+        <range>0~3</range>
+      </li>
+      <li>
+        <skill>Plants</skill>
+        <range>0~3</range>
+      </li>
+      <li>
+        <skill>Animals</skill>
+        <range>0~0</range>
+      </li>
+      <li>
+        <skill>Crafting</skill>
+        <range>0~1</range>
+      </li>
+      <li>
+        <skill>Artistic</skill>
+        <range>0~0</range>
+      </li>
+      <li>
+        <skill>Medicine</skill>
+        <range>0~1</range>
+      </li>
+      <li>
+        <skill>Social</skill>
+        <range>0~0</range>
+      </li>
+      <li>
+        <skill>Intellectual</skill>
+        <range>0~0</range>
+      </li>	  
+	</skills>
   </PawnKindDef>
-	
-  <PawnKindDef ParentName="Aotrs_HostGhoul">
-    <defName>Aotrs_GtrGhoul</defName>
-    <label>greater ghoul</label>
-    <combatPower>75</combatPower>
-    <maxGenerationAge>110</maxGenerationAge>
-    <invNutrition>5</invNutrition>
-    <apparelTags Inherit="False">
-      <li>IndustrialMilitaryBasic</li>
-    </apparelTags>
-    <apparelRequired>
-      <li>Apparel_Pants</li>
-      <li>Apparel_BasicShirt</li>
-      <li>Apparel_AdvancedHelmet</li>
-    </apparelRequired>
-    <itemQuality>Poor</itemQuality>
-    <gearHealthRange>0.3~1.1</gearHealthRange>
-    <apparelMoney>500~2000</apparelMoney>
-    <weaponMoney>306~600</weaponMoney>
-    <weaponTags Inherit="False">
-      <li>Gun</li>
-    </weaponTags>
-    <techHediffsMoney>500~1500</techHediffsMoney>
-    <techHediffsTags>
-      <li>Advanced</li>
-    </techHediffsTags>
-    <techHediffsChance>0.05</techHediffsChance>
-    <initialWillRange>0~1</initialWillRange>
-    <initialResistanceRange>40~50</initialResistanceRange>
-
-    <useFactionXenotypes>false</useFactionXenotypes>
-    <styleItemTags Inherit="False">
-      <li>
-        <tag>Soldier</tag>
-        <baseWeight>1</baseWeight>
-        <weightFactor>1</weightFactor>
-      </li>
-    </styleItemTags>
-    <skills>
-      <li>
-        <skill>Shooting</skill>
-        <range>0~12</range>
-      </li>
-      <li>
-        <skill>Melee</skill>
-        <range>0~12</range>
-      </li>
-    </skills>
-  </PawnKindDef>
-
+  
   <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
     <defName>Aotrs_SkeletalWarrior</defName>
     <label>skeletal warrior</label>
@@ -326,7 +288,7 @@
 
   <!-- Leaders -->
 
-  <PawnKindDef Name="Aotrs_SkeleChamp" ParentName="Aotrs_AniUndeadBase">
+  <PawnKindDef Name="Aotrs_SkeleChamp" ParentName="Aotrs_SkeleHostWarrior">
     <defName>Aotrs_SkeleChamp</defName>
     <label>Skeletal Champion</label>
     <combatPower>100</combatPower>

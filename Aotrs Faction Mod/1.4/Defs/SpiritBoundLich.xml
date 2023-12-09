@@ -13,10 +13,12 @@
 		<li>ArchiteMetabolism</li>
 		<li>BS_Fast_TotalHealing</li>
 		<li>VU_Unliving</li>
+		<li>VU_NoBlood</li>
 		<li>BS_Deathlike</li>
 		<li>VU_Lesser_Unliving_Resilience</li>
 		<li>AG_ColdImmunity</li>
 		<li>AG_ColdRadiating</li>
+		<li>VU_Libido_None</li>
 		<li>DarkVision</li>
 		<li>Sterile</li>
 		<li>BS_Xenolocked</li>
@@ -34,17 +36,17 @@
     <combatPowerFactor>1.0</combatPowerFactor>
     <genes>
 		<li>BS_Deathlike</li>
+		<li>AG_Mood_Unfeeling</li>
 		<li>VU_Lesser_Unliving_Resilience</li>
 		<li>VU_Unliving</li>
-		<li>Aggression_DeadCalm</li>
+		<li>VU_NoBlood</li>
 		<li>BS_Pain_None</li>
+		<li>VU_Libido_None</li>
 		<li>Sterile</li>
 		<li>BS_Xenolocked</li>
 		<li>BS_Learning_None</li>
 		<li>DarkVision</li>
-		<li>AptitudeTerrible_Artistic</li>
-		<li>AptitudeTerrible_Social</li>
-		<li>AptitudeTerrible_Intellectual</li>
+		<li>Turn_Gene_Speechless</li>
 		</genes>
   </XenotypeDef>
   
@@ -58,17 +60,17 @@
     <combatPowerFactor>1.0</combatPowerFactor>
     <genes>
 		<li>BS_Deathlike</li>
+		<li>AG_Mood_Unfeeling</li>
 		<li>VU_Lesser_Unliving_Resilience</li>
 		<li>VU_Unliving</li>
-		<li>Aggression_DeadCalm</li>
+		<li>VU_NoBlood</li>
 		<li>BS_Pain_None</li>
+		<li>VU_Libido_None</li>
 		<li>Sterile</li>
 		<li>BS_Xenolocked</li>
 		<li>BS_Learning_None</li>
 		<li>DarkVision</li>
-		<li>AptitudeTerrible_Artistic</li>
-		<li>AptitudeTerrible_Social</li>
-		<li>AptitudeTerrible_Intellectual</li>
+		<li>Turn_Gene_Speechless</li>
 		</genes>
   </XenotypeDef>
 </Defs>
