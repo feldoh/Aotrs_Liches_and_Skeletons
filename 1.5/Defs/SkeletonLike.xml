@@ -2,7 +2,7 @@
 <Defs>
 
   <AlienRace.ThingDef_AlienRace ParentName="Human">
-    <defName>Aotrs_Skeleton</defName>
+    <defName>Aotrs_SBSkeleton</defName>
     <label>Skeleton</label>
     <description>An animate humanoid skeleton.</description>
     <statBases>
@@ -14,6 +14,7 @@
       <LeatherAmount>100</LeatherAmount>
       <RoyalFavorValue>3</RoyalFavorValue>
     </statBases>
+
     <race>
       <renderTree>Humanlike</renderTree>
       <thinkTreeMain>Humanlike</thinkTreeMain>
@@ -38,7 +39,6 @@
       <useMeatFrom>Human</useMeatFrom>
       <useLeatherFrom>Human</useLeatherFrom>
 
-      <!--Just for testing.-->
     </race>
     <alienRace>
       <generalSettings>

@@ -98,7 +98,7 @@
 		</genes>
   </XenotypeDef>
   
-    <XenotypeDef>
+    <!--XenotypeDef>
     <defName>Aotrs_AniZom</defName>
     <label>Animated Zombie</label>
     <description>Zombies created by Animate Dead spells are little more than negative energy-powered constructs.</description>
@@ -120,5 +120,5 @@
 		<li>DarkVision</li>
 		<li>Turn_Gene_Speechless</li>
 		</genes>
-  </XenotypeDef>
+  </XenotypeDef-->
 </Defs>

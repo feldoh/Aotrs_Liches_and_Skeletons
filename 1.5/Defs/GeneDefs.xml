@@ -38,15 +38,11 @@
       <li>OrganDecay</li>
 	  <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
     </makeImmuneTo>
-	<isConsideredCorpse>true</isConsideredCorpse>
-    <canBleed>false</canBleed>
-    <bloodDef>Filth_DarkBlood</bloodDef>
-    <bloodSmearDef>Filth_DarkBloodSmear</bloodSmearDef>
-    <isImmuneToInfections>true</isImmuneToInfections>
 	<customEffectDescriptions>
       <li>Immune to vampirism</li>
       <li>Immune to zombification.</li>
-    </customEffectDescriptions>
+	  <li>Does not bleed</li>
+	  </customEffectDescriptions>
 	<hediffGiversCannotGive>
       <li>Carcinoma</li>
       <li>HeartAttack</li>
@@ -69,7 +65,7 @@
       </points>
     </biologicalAgeTickFactorFromAgeCurve>
     <exclusionTags>
-	  <li>BS_BleedRate</li>
+	  <!--li>BS_BleedRate</li> Attemted to replace with HAR bleedratefactor in Aotrs_SBSkeleton-->
 	  <li>Diet</li>
       <li>Eats</li>
       <li>HairStyle</li>
@@ -113,7 +109,7 @@
 		</li>
 		<li Class="BetterPrerequisites.GeneExtension">
 			<disableFacialAnimations>true</disableFacialAnimations>
-			<thingDefSwap>BS_HumanFouramed</thingDefSwap>
+			<thingDefSwap>Aotrs_SBSkeleton</thingDefSwap>
 			<forceThingDefSwap>false</forceThingDefSwap>
 		</li>
 		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">

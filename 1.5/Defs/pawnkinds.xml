@@ -1,12 +1,66 @@
 <Defs>
 
-  <!-- Base type so that animated undead don't block thinking undead skills -->
+   <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Aotrs_Colonist</defName>
+    <label>colonist</label>
+	<race>Aotrs_SBSkeleton</race>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>350~600</apparelMoney>
+	<xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Aotrs_Lich>999</Aotrs_Lich>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <techHediffsDisallowTags>
+      <li>PainCauser</li>
+    </techHediffsDisallowTags>
+    <initialResistanceRange>13~21</initialResistanceRange>
+  </PawnKindDef>
+ 
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Aotrs_Tribesperson</defName>
+    <label>member</label>
+    <race>Aotrs_SBSkeleton</race>
+    <defaultFactionType>PlayerTribe</defaultFactionType>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <apparelTags>
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelMoney>200~200</apparelMoney>
+	<xenotypeSet Inherit="False">
+      <xenotypeChances>
+        <Aotrs_Lich>999</Aotrs_Lich>
+      </xenotypeChances>
+     </xenotypeSet>
+    <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+    <techHediffsMoney>50~50</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+    </techHediffsTags>
+    <techHediffsChance>0.02</techHediffsChance>
+    <initialResistanceRange>9~15</initialResistanceRange>
+  </PawnKindDef>
+  
+    <!-- Base type so that animated undead don't block thinking undead skills -->
   
   <PawnKindDef Name="Aotrs_SkeleHostWarrior">
     <defName>Aotrs_SkeleHostWarrior</defName>
     <label>roaming skeleton</label>
     <combatPower>60</combatPower>
-    <race>Human</race>
+    <race>Aotrs_SBSkeleton</race>
     <defaultFactionType>Aotrs_SkeletonHorde</defaultFactionType>
     <maxGenerationAge>100</maxGenerationAge>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -40,12 +94,7 @@
     <initialResistanceRange>40~50</initialResistanceRange>
     <factionLeader>false</factionLeader>
 
-    <xenotypeSet Inherit="False">
-      <xenotypeChances>
-        <Aotrs_AniSkel>1</Aotrs_AniSkel>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-    </xenotypeSet>
+  <useFactionXenotypes>true</useFactionXenotypes>
 	
     <requiredWorkTags>
       <li>Violent</li>
@@ -84,61 +133,7 @@
     </skills>
   </PawnKindDef>
 
-  <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
-    <defName>Aotrs_HostZombie</defName>
-    <label>roaming zombie</label>
-    <race>Human</race>
-    <useFactionXenotypes>false</useFactionXenotypes>
-	<xenotypeSet Inherit="False">
-      <xenotypeChances>
-        <Aotrs_AniZom>1</Aotrs_AniZom>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-	</xenotypeSet>
-		<skills>
-	    <li>
-        <skill>Construction</skill>
-        <range>0~5</range>
-      </li>
-      <li>
-        <skill>Mining</skill>
-        <range>0~5</range>
-      </li>
-      <li>
-        <skill>Cooking</skill>
-        <range>0~3</range>
-      </li>
-      <li>
-        <skill>Plants</skill>
-        <range>0~3</range>
-      </li>
-      <li>
-        <skill>Animals</skill>
-        <range>0~0</range>
-      </li>
-      <li>
-        <skill>Crafting</skill>
-        <range>0~1</range>
-      </li>
-      <li>
-        <skill>Artistic</skill>
-        <range>0~0</range>
-      </li>
-      <li>
-        <skill>Medicine</skill>
-        <range>0~1</range>
-      </li>
-      <li>
-        <skill>Social</skill>
-        <range>0~0</range>
-      </li>
-      <li>
-        <skill>Intellectual</skill>
-        <range>0~0</range>
-      </li>	  
-	</skills>
-  </PawnKindDef>
-  
+ 
     <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
     <defName>Aotrs_SkeleMindless</defName>
     <label>mindless skeleton</label>
@@ -184,7 +179,13 @@
         <range>0~0</range>
       </li>	  
 	</skills>
-  </PawnKindDef>
+    <useFactionXenotypes>false</useFactionXenotypes>
+	<xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <Aotrs_AniSkel>999</Aotrs_AniSkel>
+      </xenotypeChances>
+    </xenotypeSet>
+	</PawnKindDef>
   
   <PawnKindDef ParentName="Aotrs_SkeleHostWarrior">
     <defName>Aotrs_SkeletalWarrior</defName>
@@ -217,7 +218,7 @@
     <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>40~50</initialResistanceRange>
 
-    <useFactionXenotypes>false</useFactionXenotypes>
+    <useFactionXenotypes>true</useFactionXenotypes>
     <styleItemTags Inherit="False">
       <li>
         <tag>Soldier</tag>
@@ -266,7 +267,7 @@
     <initialWillRange>0~1</initialWillRange>
     <initialResistanceRange>40~50</initialResistanceRange>
 
-    <useFactionXenotypes>false</useFactionXenotypes>
+    <useFactionXenotypes>true</useFactionXenotypes>
     <styleItemTags Inherit="False">
       <li>
         <tag>Soldier</tag>
@@ -292,16 +293,10 @@
     <defName>Aotrs_SkeleChamp</defName>
     <label>Skeletal Champion</label>
     <combatPower>100</combatPower>
-    <race>Human</race>
+    <race>Aotrs_SBSkeleton</race>
     <defaultFactionType>Aotrs_SkeletonHorde</defaultFactionType>
     <maxGenerationAge>1000</maxGenerationAge>
-    <invNutrition>5</invNutrition>
-	<xenotypeSet Inherit="False">
-      <xenotypeChances Inherit="False">
-        <Aotrs_Lich>0.2</Aotrs_Lich>
-      </xenotypeChances>
-      <warnIfTotalAbove1>false</warnIfTotalAbove1>
-    </xenotypeSet>
+    <invNutrition>0</invNutrition>
     <apparelTags Inherit="False">
       <li>IndustrialBasic</li>
       <li>IndustrialAdvanced</li>
@@ -331,7 +326,12 @@
     <initialResistanceRange>12~25</initialResistanceRange>
 
     <useFactionXenotypes>false</useFactionXenotypes>
-
+	<xenotypeSet Inherit="False">
+      <xenotypeChances Inherit="False">
+        <Aotrs_Lich>999</Aotrs_Lich>
+      </xenotypeChances>
+    </xenotypeSet>
+	
     <styleItemTags Inherit="False">
       <li>
         <tag>Soldier</tag>
@@ -404,4 +404,5 @@
       </li>
     </skills>
   </PawnKindDef>
-</Defs>
+ </Defs>
+
