@@ -14,7 +14,7 @@
       <ComfyTemperatureMax>250</ComfyTemperatureMax>
       <MeatAmount>0</MeatAmount>
       <LeatherAmount>0</LeatherAmount>
-      <RoyalFavorValue>3</RoyalFavorValue>
+      <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">3</RoyalFavorValue>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
     </statBases>
 
@@ -55,13 +55,27 @@
 			<hasBlood>false</hasBlood>
 		</compatibility>
 		<raceRestriction>
-			<xenotypeList>
+			<!--xenotypeList> If enabled, xenotype doesn't show up or get applied in colonist selection screen
 				<li>Aotrs_Lich</li>
-			</xenotypeList>
-					<geneList>
+			</xenotypeList-->
+			<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+			<whiteXenotypeList> 
+				<li>Baseliner</li>
+				<li>Aotrs_Lich</li>
+				<li>Aotrs_Elf</li>
+				<li>Aotrs_Orc</li>
+				<li>Aotrs_Dwarf</li>
+				<li>Pigskin</li>
+				<li>Impid</li>
+				<li>Yttakin</li>
+				<li>Neanderthal</li>
+				<li>Waster</li>
+				<li>Dirtmole</li>
+			</whiteXenotypeList>
+			<!--geneList>
 				<li>Aotrs_Skeleform</li>
-			</geneList>
-				<blackEndoCategories>
+			</geneList-->
+			<blackEndoCategories>
 				<li>Ears</li>
 				<li>Nose</li>
 			</blackEndoCategories>
@@ -82,7 +96,7 @@
       <ComfyTemperatureMax>250</ComfyTemperatureMax>
       <MeatAmount>0</MeatAmount>
       <LeatherAmount>0</LeatherAmount>
-      <RoyalFavorValue>0</RoyalFavorValue>
+      <RoyalFavorValue MayRequire="ludeon.rimworld.royalty">0</RoyalFavorValue>
 	  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">1</ToxicEnvironmentResistance>
     </statBases>
 
@@ -123,12 +137,20 @@
 			<hasBlood>false</hasBlood>
 		</compatibility>
 		<raceRestriction>
-			<xenotypeList>
+			<onlyUseRaceRestrictedXenotypes>true</onlyUseRaceRestrictedXenotypes>
+			<whiteXenotypeList> 
+				<li>Baseliner</li>
 				<li>Aotrs_AniSkel</li>
-			</xenotypeList>
-					<geneList>
-				<li>Aotrs_SkeleformAni</li>
-			</geneList>
+				<li>Aotrs_Elf</li>
+				<li>Aotrs_Orc</li>
+				<li>Aotrs_Dwarf</li>
+				<li>Pigskin</li>
+				<li>Impid</li>
+				<li>Yttakin</li>
+				<li>Neanderthal</li>
+				<li>Waster</li>
+				<li>Dirtmole</li>
+			</whiteXenotypeList>
 			<blackEndoCategories>
 				<li>Ears</li>
 				<li>Nose</li>

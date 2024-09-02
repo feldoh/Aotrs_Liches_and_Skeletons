@@ -8,19 +8,19 @@
     <descriptionShort>A self-willed skeleton created by necromantic magic.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/SpiritBoundLich</iconPath>
 	<doubleXenotypeChances>
-      <Aotrs_Elf>0.15</Aotrs_Elf> 
-	  <Aotrs_Orc>0.07</Aotrs_Orc> 
+      <Aotrs_ElfnoEars>0.15</Aotrs_ElfnoEars> 
+	  <Aotrs_OrcnoEars>0.07</Aotrs_OrcnoEars> 
 	  <Aotrs_Dwarf>0.05</Aotrs_Dwarf>
-	  <Pigskin>0.02</Pigskin>
+	  <!--Pigskin>0.02</Pigskin>
       <Impid>0.02</Impid>
       <Yttakin>0.02</Yttakin>
       <Neanderthal>0.02</Neanderthal>
       <Waster>0.02</Waster>
-      <Dirtmole>0.02</Dirtmole>
-      <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
+      <Dirtmole>0.02</Dirtmole-->
+      <!--BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
       <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
       <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>
-      <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
+      <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun-->
     </doubleXenotypeChances>
     <inheritable>false</inheritable>
     <combatPowerFactor>2.0</combatPowerFactor>
@@ -59,11 +59,33 @@
 		<li>Body_Standard</li>
 		<li>Body_Thin</li>
 		<li>Beauty_Pretty</li>
-		<li>Beauty_Beautiful</li>
+		<!--li>Beauty_Beautiful</li-->
 		<li>BS_GeneStabilizing_Moderate</li>
 		</genes>
 	</XenotypeDef>
 
+  <XenotypeDef>
+    <defName>Aotrs_ElfnoEars</defName>
+    <label>Kalanothi Elf</label>
+    <description>An specific type of elf, named for the elves from the Aotrs planet Kalanoth where the definition was codified. Due to the prevalence of Harbinger Retrocasual Probability Engineering, this type of elf is quite common in the galaxy and possibly beyond, even when arising from apparently otherwise entirely unrelated worlds. Kalanothi elves are closely releated to fey, granting them functional immunity to nonmagical diseases, senses keener than humans and generally fair forms. This type of elf does not naturally age and are functionally immortal is not killed by combat or misfortune.</description>
+    <descriptionShort>Elves.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/KalanothiElf</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>2.0</combatPowerFactor>
+    <genes>
+		<li>Ageless</li>
+		<li>BS_TrulyAgeless</li>
+		<li>DiseaseFree</li>
+		<li>PerfectImmunity</li>
+ 		<li>Beard_NoBeardOnly</li>
+		<li>Body_Standard</li>
+		<li>Body_Thin</li>
+		<li>Beauty_Pretty</li>
+		<!--li>Beauty_Beautiful</li-->
+		<li>BS_GeneStabilizing_Moderate</li>
+		</genes>
+	</XenotypeDef>
+	
   <XenotypeDef>
     <defName>Aotrs_Orc</defName>
     <label>Kalanothi Orc</label>
@@ -80,6 +102,28 @@
 		<li>Body_Standard</li>
 		<li>Body_Hulk</li>
 		<li>Ears_Pig</li>
+		<li>Aggression_Aggressive</li>
+		<li>Libido_Low</li>
+		<li>DarkVision</li>
+		<li>Robust</li>	
+		<li>MeleeDamage_Strong</li>
+	</genes>
+  </XenotypeDef>
+  
+    <XenotypeDef>
+    <defName>Aotrs_OrcnoEars</defName>
+    <label>Kalanothi Orc</label>
+    <description>An specific type of orc, named for the elves from the Aotrs planet Kalanoth where the definition was codified. Due to the prevalence of Harbinger Retrocasual Probability Engineering, this type of orc is quite common in the galaxy and possibly beyond, even when arising from apparently otherwise entirely unrelated worlds. Kalanothi orcs are bulkier than humans and more aggressive, but not as brutish as some orc strains.</description>
+    <descriptionShort>Orcs.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/KalanothiOrc</iconPath>
+    <inheritable>true</inheritable>
+    <combatPowerFactor>2.0</combatPowerFactor>
+    <genes>
+		<li>Eyes_Red</li>
+		<li>Skin_Green</li>
+		<li>Jaw_Heavy</li>
+		<li>Body_Standard</li>
+		<li>Body_Hulk</li>
 		<li>Aggression_Aggressive</li>
 		<li>Libido_Low</li>
 		<li>DarkVision</li>
@@ -119,15 +163,15 @@
     <descriptionShort>A mindless skeleton created by necromantic magic.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/SpiritBoundLich</iconPath>
 	<doubleXenotypeChances>
-      <Aotrs_Elf>0.15</Aotrs_Elf> 
-	  <Aotrs_Orc>0.07</Aotrs_Orc> 
+      <Aotrs_ElfnoEars>0.15</Aotrs_ElfnoEars> 
+	  <Aotrs_OrcnoEars>0.07</Aotrs_OrcnoEars> 
 	  <Aotrs_Dwarf>0.05</Aotrs_Dwarf>
-	  <Pigskin>0.02</Pigskin>
+	  <!--Pigskin>0.02</Pigskin>
       <Impid>0.02</Impid>
       <Yttakin>0.02</Yttakin>
       <Neanderthal>0.02</Neanderthal>
       <Waster>0.02</Waster>
-      <Dirtmole>0.02</Dirtmole>
+      <Dirtmole>0.02</Dirtmole-->
       <BS_Svartalf MayRequire="RedMattis.BigSmall">0.05</BS_Svartalf>
       <BS_FrostJotun MayRequire="RedMattis.BigSmall">0.01</BS_FrostJotun>
       <BS_Jotun MayRequire="RedMattis.BigSmall">0.01</BS_Jotun>

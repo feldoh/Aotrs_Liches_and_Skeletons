@@ -1,12 +1,47 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
+  <FactionDef ParentName="PlayerFactionBase">
+    <defName>Aotrs_New_Arrivals</defName>
+    <label>Aotrs New Arrivals</label>
+    <description>A colony of recently-arrived off-world liches.</description>
+    <isPlayer>true</isPlayer>
+    <basicMemberKind>Colonist</basicMemberKind>
+    <pawnSingular>colonist</pawnSingular>
+    <pawnsPlural>colonists</pawnsPlural>
+    <techLevel>Industrial</techLevel>
+    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <startingResearchTags>
+      <li>ClassicStart</li>
+    </startingResearchTags>
+    <startingTechprintsResearchTags>
+      <li>ClassicStart</li>
+      <li>ClassicStartTechprints</li>
+    </startingTechprintsResearchTags>
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Synthread</li>
+      </thingDefs>
+    </apparelStuffFilter>
+  </FactionDef>
+  
+
   <FactionDef ParentName="PirateBandBase">
     <defName>Aotrs_Aotrs</defName>
     <label>Army Of The Red Spear</label>
     <leaderTitle>Lichemaster</leaderTitle>   
 	<description>A highly-organised group of Liches.</description>
-	<factionIconPath>UI\Icons\Factions</factionIconPath>
+	<factionIconPath>UI/Icons/Factions/Aotrs_Aotrs</factionIconPath>
 	<colorSpectrum>
       <li>(0.8, 0.1, 0.3)</li>
       <li>(1.0, 0.2, 0.4)</li>

@@ -75,13 +75,16 @@
       <li>Fur</li>
       <li>BeardStyle</li>
 	  <li>Immunity</li>
+	  <li>Ears</li>
+	  <li>Nose</li>
+	  <li>Tail</li>
     </exclusionTags>
 	<geneClass>BetterPrerequisites.PGene</geneClass>
 	<displayCategory>BS_Deathless</displayCategory>
-     <displayOrderInCategory>500</displayOrderInCategory>
+     <displayOrderInCategory>1</displayOrderInCategory>
 	 <canGenerateInGeneSet>false</canGenerateInGeneSet>
 	<biostatCpx>10</biostatCpx>
-    <biostatMet>-5</biostatMet>
+    <biostatMet>5</biostatMet>
     <biostatArc>4</biostatArc>
     <hairTagFilter>
       <whitelist>true</whitelist>
@@ -222,13 +225,16 @@
       <li>Fur</li>
       <li>BeardStyle</li>
 	  <li>Immunity</li>
+      <li>Ears</li>
+	  <li>Nose</li>
+	  <li>Tail</li>
     </exclusionTags>
 	<geneClass>BetterPrerequisites.PGene</geneClass>
 	<displayCategory>BS_Deathless</displayCategory>
-     <displayOrderInCategory>500</displayOrderInCategory>
+     <displayOrderInCategory>2</displayOrderInCategory>
 	 <canGenerateInGeneSet>false</canGenerateInGeneSet>
 	<biostatCpx>10</biostatCpx>
-    <biostatMet>0</biostatMet>
+    <biostatMet>6</biostatMet>
     <biostatArc>4</biostatArc>
     <hairTagFilter>
       <whitelist>true</whitelist>
