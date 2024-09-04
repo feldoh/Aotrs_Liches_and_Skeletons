@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!--VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
+		<defName>Aotrs_Animate Dead</defName>
+		<label>Antimate Dead</label>
+		<description>Permenantly animates a dead body into an animated skeleton.</description>
+		<iconPath>Abilities/Necropath/Enthrall</iconPath>
+		<abilityClass>VanillaPsycastsExpanded.Ability_SpawnSkeleton</abilityClass>
+		<castTime>15</castTime>
+		<range>19.9</range>
+		<reserveTargets>true</reserveTargets>
+		<targetingParameters>
+			<canTargetLocations>False</canTargetLocations>
+			<canTargetSelf>False</canTargetSelf>
+			<canTargetAnimals>False</canTargetAnimals>
+			<canTargetPawns>False</canTargetPawns>
+			<canTargetHumans>False</canTargetHumans>
+			<canTargetItems>true</canTargetItems>
+			<thingCategory>Item</thingCategory>
+			<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+		</targetingParameters>
+		<castSound>VPE_Enthrall_Cast</castSound>
+		<modExtensions>
+			<li Class="VanillaPsycastsExpanded.AbilityExtension_Psycast">
+				<path>VPE_Necropath</path>
+				<level>5</level>
+				<order>1</order>
+				<psyfocusCost>0.04</psyfocusCost>
+				<entropyGain>22</entropyGain>
+				<prerequisites>
+					<li>VPE_Deathshield</li>
+				</prerequisites>
+			</li>
+		</modExtensions>
+	</VFECore.Abilities.AbilityDef-->
+</Defs>
