@@ -12,10 +12,9 @@
 			<factionDef>Aotrs_New_Arrivals</factionDef>
 		</playerFaction>
 		<parts>
-        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
+		<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_Xenotypes">
           <def>ConfigurePawnsXenotypes</def>
-          <pawnCount>3</pawnCount>
-          <pawnChoiceCount>8</pawnChoiceCount>
+          <pawnChoiceCount>3</pawnChoiceCount>
           <overrideKinds>
             <li>
               <xenotype>Aotrs_Lich</xenotype>
@@ -25,6 +24,7 @@
           <xenotypeCounts>
             <li>
               <requiredAtStart>true</requiredAtStart>
+			  <count>3</count>
               <xenotype>Aotrs_Lich</xenotype>
               <allowedDevelopmentalStages>Adult</allowedDevelopmentalStages>
             </li>

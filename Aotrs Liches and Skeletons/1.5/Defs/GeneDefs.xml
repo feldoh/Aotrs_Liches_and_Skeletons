@@ -133,12 +133,41 @@
 			<thingDefSwap>Aotrs_SBSkeleton</thingDefSwap>
 			<forceThingDefSwap>false</forceThingDefSwap>
 		</li>
+		
 		<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VanillaGenesExpanded.GeneExtension">
 				<backgroundPathEndogenes>GeneIcons/BS_BackEndogene</backgroundPathEndogenes>
 				<backgroundPathXenogenes>GeneIcons/BS_BackXenogene</backgroundPathXenogenes>
 				<backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
 				<furHidesBody>true</furHidesBody>
 		</li>
+          <li Class="LichGenePatch.GeneRemovalModExtension">
+            <keyGene>Aotrs_Skeleform</keyGene>
+             <genesToRemove>
+                  <!--li>Gene_JJKLimitless</li>
+                  <li>Gene_Kenjaku</li>
+                  <li>Gene_JJKMahito</li-->
+					<li>Tail_Furry</li>
+					<li>AG_FoxTail</li>
+					<li>AG_AnimusEars</li>
+					<li>Ears_Cat</li>
+					<li>AG_DemonEars</li>
+					<li>AG_EarWings</li>
+					<li>Ears_Floppy</li>
+					<li>BS_FoxEars</li>
+					<li>BS_AnimalEars</li>
+					<li>Ears_Human</li>
+					<li>AG_LongEars</li>
+					<li>AG_NereidFins</li>
+					<li>Ears_Pig</li>
+					<li>Ears_Pointed</li>
+					<li>BS_Ears_PointedHD</li>
+					<li>AG_RadYakEars</li>
+					<li>AG_SingleEar</li>
+					<li>Nose_Human</li>
+					<li>Nose_Pig</li>
+					<li>BS_TrollNose</li>
+                </genesToRemove>
+        </li>
 		
     </modExtensions>
 	    <renderNodeProperties Inherit="False">
@@ -272,6 +301,34 @@
 				<backgroundPathArchite>GeneIcons/BS_BackArchite_1</backgroundPathArchite>
 				<furHidesBody>true</furHidesBody>
 		</li>
+          <li Class="LichGenePatch.GeneRemovalModExtension">
+            <keyGene>Aotrs_Skeleform</keyGene>
+             <genesToRemove>
+                  <!--li>Gene_JJKLimitless</li>
+                  <li>Gene_Kenjaku</li>
+                  <li>Gene_JJKMahito</li-->
+					<li>Tail_Furry</li>
+					<li>AG_FoxTail</li>
+					<li>AG_AnimusEars</li>
+					<li>Ears_Cat</li>
+					<li>AG_DemonEars</li>
+					<li>AG_EarWings</li>
+					<li>Ears_Floppy</li>
+					<li>BS_FoxEars</li>
+					<li>BS_AnimalEars</li>
+					<li>Ears_Human</li>
+					<li>AG_LongEars</li>
+					<li>AG_NereidFins</li>
+					<li>Ears_Pig</li>
+					<li>Ears_Pointed</li>
+					<li>BS_Ears_PointedHD</li>
+					<li>AG_RadYakEars</li>
+					<li>AG_SingleEar</li>
+					<li>Nose_Human</li>
+					<li>Nose_Pig</li>
+					<li>BS_TrollNose</li>
+                </genesToRemove>
+        </li>
 		
     </modExtensions>
 	    <renderNodeProperties Inherit="False">
