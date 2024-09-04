@@ -9,6 +9,8 @@ Mod compiled by Aotrs Commander
 
 RedMattis, Oskar, Sarg, Erdelf and Mile, whose mods (in the dependant list) I am standing on the shoulders of; RedMattis in particular can be credited with about 80% of the mod's code (and with some additional help to boot!) I have merely attempted to paste this together into a hopefully-functional unit.
 
+Emo on Discord for helping with the coding for GenePrunderExtension code to deal with the errant ears and noses!
+
 Contents:
 
 Two skeleton xenotypes: Spirit-Bound Lich and Animated Skeleton
@@ -24,6 +26,8 @@ Three additional simple endogene xenotypes:
 Elf, Orc and Dwarf. Kalanothi Elves, Orcs and Dwarves. So-named for the elves from the Aotrs planet Kalanoth where the definitions were codified. Due to the prevalence of Harbinger Retrocasual Probability Engineering, these types of elves, orcs and dwarves are quite common in the galaxy and possibly beyond, even when arising from apparently otherwise entirely unrelated worlds.
 
 Two factions, The Army of The Red spear faction (the titular Aotrs) and the Skeleton Horde, comprising masses of animated skeletons, with some more advanced lich commanders. Both liches and skeletons from these factions may be of various endogene xenotypes, including the above.
+
+Starting scenario with three liches (a modified classic start).
 
 General notes:
 
@@ -51,6 +55,6 @@ Better way to handle eyeglows (and weight the chances of which head (and therefo
 
 Way to butcher corpses for bones as above.
 
-Meditation instead of sleep...? This might only be pertinent for psycasting, and would be a fairly significant buff.
+Meditation need instead of sleep need...? This might only be pertinent for psycasting. The simplest way would be to make them not sleep like the animated skeletons and just leave meditation organically for actual psycasters, but hat would be a fairly significant buff again.
 
 Names lists.
