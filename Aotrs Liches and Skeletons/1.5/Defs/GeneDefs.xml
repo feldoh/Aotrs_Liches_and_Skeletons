@@ -75,9 +75,7 @@
       <li>Fur</li>
       <li>BeardStyle</li>
 	  <li>Immunity</li>
-	  <li>Ears</li>
-	  <li>Nose</li>
-	  <li>Tail</li>
+	  <li>Sleep</li>
     </exclusionTags>
 	<geneClass>BetterPrerequisites.PGene</geneClass>
 	<displayCategory>BS_Deathless</displayCategory>
@@ -114,6 +112,9 @@
 	  <li>AotrsSkullHead8</li>
 	  <li>AotrsSkullNarrow8</li>
 	  </forcedHeadTypes>
+	  	<disablesNeeds>
+      <li>Rest</li>
+    </disablesNeeds>
 	<modExtensions>
         <li Class="BetterPrerequisites.LockedNeed">
 			<lockedNeeds>
@@ -146,26 +147,72 @@
                   <!--li>Gene_JJKLimitless</li>
                   <li>Gene_Kenjaku</li>
                   <li>Gene_JJKMahito</li-->
-					<li>Tail_Furry</li>
-					<li>AG_FoxTail</li>
+					<li>AG_AerofleetHead</li>
 					<li>AG_AnimusEars</li>
-					<li>Ears_Cat</li>
+					<li>AG_CancerousBody</li>
+					<li>AG_CancerousFace</li>
 					<li>AG_DemonEars</li>
+					<li>AG_DrakonoriBody</li>
+					<li>AG_DrakonoriHead</li>
 					<li>AG_EarWings</li>
-					<li>Ears_Floppy</li>
-					<li>BS_FoxEars</li>
-					<li>BS_AnimalEars</li>
-					<li>Ears_Human</li>
+					<li>AG_FaceTentacles</li>
+					<li>AG_FoxFace</li>
+					<li>AG_FoxTail</li>
+					<li>AG_GauntBody</li>
+					<li>AG_HeavilyScarred</li>
+					<li>AG_Instability_Lethal</li>
 					<li>AG_LongEars</li>
+					<li>AG_NereidBody</li>
 					<li>AG_NereidFins</li>
+					<li>AG_NereidHead</li>
+					<li>AG_RadYakEars</li>
+					<li>AG_RayHoundTentacles</li>
+					<li>AG_RockSpurs</li>
+					<li>AG_RockyBody</li>
+					<li>AG_ScalyBody</li>
+					<li>AG_SingleEar</li>
+					<li>AG_SlimeBody</li>
+					<li>AG_SlugBody</li>
+					<li>AG_SlugFace</li>
+					<li>AG_Stalks</li>
+					<li>AG_UpperTentacles</li>
+					<li>AG_VeryGauntHead</li>
+					<li>AG_VFEI_SegmentedEyes</li>
+					<li>BS_AnimalEars</li>
+					<li>BS_Ears_PointedHD</li>
+					<li>BS_FoxEars</li>
+					<li>BS_Instability_Catastrophic</li>
+					<li>BS_TrollNose</li>
+					<li>Ears_Cat</li>
+					<li>Ears_Floppy</li>
+					<li>Ears_Human</li>
 					<li>Ears_Pig</li>
 					<li>Ears_Pointed</li>
-					<li>BS_Ears_PointedHD</li>
-					<li>AG_RadYakEars</li>
-					<li>AG_SingleEar</li>
+					<li>FacialRidges</li>
+					<li>Furskin</li>
+					<li>Inbred</li>
+					<li>Instability_Major</li>
+					<li>Instability_Mild</li>
+					<li>LoS_SnekSnoot</li>
 					<li>Nose_Human</li>
 					<li>Nose_Pig</li>
-					<li>BS_TrollNose</li>
+					<li>Tail_Furry</li>
+					<li>Turn_Gene_DryadFace</li>
+					<li MayRequire="vanillaracesexpanded.phytokin">VRE_BarkSkin</li>
+					<li MayRequire="vanillaracesexpanded.pigskin">VRE_CurledTail</li>
+					<li MayRequire="vanillaracesexpanded.genie">VRE_ElongatedHead</li>
+					<li MayRequire="vanillaracesexpanded.highmate">VRE_FelineEars</li>
+					<li MayRequire="vanillaracesexpanded.highmate">VRE_FelineTail</li>
+					<li MayRequire="vanillaracesexpanded.fungoid">VRE_FungalCrest</li>
+					<li MayRequire="vanillaracesexpanded.insector">VRE_InsectSkin</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Extreme</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Nominal</li>
+					<li MayRequire="vanillaracesexpanded.waster">VRE_Instability_Progressive</li>
+					<li MayRequire="vanillaracesexpanded.highmate">VRE_PerfectBody</li>
+					<li MayRequire="vanillaracesexpanded.saurid">VRESaurids_CenterFrill</li>
+					<li MayRequire="vanillaracesexpanded.saurid">VRESaurids_FrilledEars</li>
+					<li MayRequire="vanillaracesexpanded.saurid">VRESaurids_GeckoTail</li>
+					<li MayRequire="vanillaracesexpanded.saurid">VRESaurids_ScaleSkin</li>
                 </genesToRemove>
         </li>
 		
@@ -254,9 +301,6 @@
       <li>Fur</li>
       <li>BeardStyle</li>
 	  <li>Immunity</li>
-      <li>Ears</li>
-	  <li>Nose</li>
-	  <li>Tail</li>
 	  <li>Sleep</li>
     </exclusionTags>
 	<geneClass>BetterPrerequisites.PGene</geneClass>
