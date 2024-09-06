@@ -1,5 +1,4 @@
 # Aotrs Liches and Skeletons
-Rimworld mod for creating skeletal undead xenotypes and faction.
 
 This mod introduces liches and animated skeletons as a xenotype.
 
@@ -21,7 +20,7 @@ Animated skeletons are fundamentally negative-energy powered constructs. They ar
 
 They have no blood, no not eat or sleep and are immune to poisons, diseases and most other effects.
 
-Spirit-Bound Liches are skeletons whose bodies are "haunted" by a bound spirit (usually, but not always, the original owner) in a way not dissimilar to a location-bound haunt, like a haunted house. On top of the traits they share with skeletons, liches produce a cold aura, and heal from damage rapidly. They can consume, but do not need to. While strictly, they do not need sleep, liches typically require some hours of meditation per day to regain their mana. (This is represented in game-currently as still having the sleep need, but functionally with the Fast Sleeper trait.)
+Spirit-Bound Liches are skeletons whose bodies are "haunted" by a bound spirit (usually, but not always, the original owner) in a way not dissimilar to a location-bound haunt, like a haunted house. On top of the traits they share with skeletons, liches produce a cold aura, and heal from damage rapidly. They can consume, but do not need to. While strictly, they do not need sleep, liches typically require some hours of meditation per day to regain their mana. (This is represented in game organically by having no sleep need and letting the player set meditation to gain psyfocus.)
 
 Three additional simple endogene xenotypes:
 
@@ -35,14 +34,12 @@ General notes:
 
 The colour of a skeleton is defined by hair colour. At the moment, it is set to a fixed value in the Gene defs, due to the only way I could get the eyeglows was to paint them on the forced head types. (I looked at the plausibility of doing facial animations, using just eyes (i.e. eyeglows), but ultimately concluded that it is beyond me. I toyed with a variant of eye colour genes - but that doesn't work with Facial animation, unfortunately.) If that problem could be fixed, bone-as-hair-colour would in theory allow liches to paint their bones (to diversify skeleton pawns).
 
-Liches sleep: Liches meditate to regain their mana, so sleep has been left enabled (with fast sleeper) in lieu.
-
 Liches can eat: needs are set to 90%, so they should be able to eat (for fun and drugs etc.), but do not require it.
 
 
 Known Issues:
 
-Additional body parts (tails, tentacles) will not be skeletal. I have managed to disable noses and ears, to obviate the worst of the issues (those genes will be removed by the race type, to at least mollify the worst of this.
+Additional body parts (tails, tentacles) will not be skeletal. Thanks to the GenRemoverPatch, genes that would not make any sense or would display should be removed when the Skeleform Gene is applied. I have gone down the list of genes in the dependant mods (at time of writing) with a criterion of removing all skin-based genes (aside from colour), ears/noses etc, fur and anything that made sense. I have left chitin-based genes as well as horns. Some tails (those which grant manipulation) have been left in, as well as wings (though strictly speaking, they probably should be removed, I felt leaving it in was better). Gene instability genes and many different headforms have also been excluded. This should hopefully keep the skeletons skeltal. I have also added this support for the genes from most of Vanilla Races Expanded genes. If additional genes become a problem, they can be added to the list.
 
 No facial animation: As noted, beyond my capabilities to have the eyes animated, sorry.
 
