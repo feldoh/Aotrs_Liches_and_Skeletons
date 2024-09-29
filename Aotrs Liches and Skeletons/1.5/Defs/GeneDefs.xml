@@ -21,7 +21,7 @@
     <label>Skeletal Form</label>
     <description>The creature is a spirit, bound into a skeleton body. It is immune to disease and aging, and does not bleed. It is capable of consuming, but does not require food. Over time, the spirit can modify the body, so a child lich is not stuck forever.</description>
     <iconPath>GeneIcons/Aotrs_SkelebodySB</iconPath>
-    <fur>AotrsSkeleBody</fur>
+	<fur>AotrsSkeleBody</fur>
     <tattoosVisible>false</tattoosVisible>
     <skinIsHairColor>true</skinIsHairColor>
 	<hairColorOverride>(250, 240, 240)</hairColorOverride>
@@ -37,7 +37,9 @@
       <li>MuscleParasites</li>
       <li>OrganDecay</li>
 	  <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
+	  <li>ScanningSickness</li>
     </makeImmuneTo>
+	<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
 	<customEffectDescriptions>
       <li>Immune to vampirism</li>
       <li>Immune to zombification.</li>
@@ -54,13 +56,11 @@
       <li>Asthma</li>
       <li>HeartArteryBlockage</li>
 	  <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
+	  <li>ScanningSickness</li>
     </hediffGiversCannotGive>
 	<statFactors>
       <HSAU_GhoulismSusceptibility MayRequire="Baskerville.HellsingARMSUltimate">0</HSAU_GhoulismSusceptibility>
     </statFactors>
-	 <statOffsets>
-         <RestRateMultiplier>0.50</RestRateMultiplier>
-     </statOffsets>
 	 <biologicalAgeTickFactorFromAgeCurve>
       <points>
         <li>(13, 1)</li>
@@ -69,20 +69,21 @@
     </biologicalAgeTickFactorFromAgeCurve>
     <exclusionTags>
 	  <!--li>BS_BleedRate</li> Attemted to replace with HAR bleedratefactor in Aotrs_SBSkeleton-->
-	  <li>Diet</li>
-      <li>Eats</li>
       <li>HairStyle</li>
       <li>Fur</li>
       <li>BeardStyle</li>
 	  <li>Immunity</li>
 	  <li>Sleep</li>
+	  <li>Food</li>
+	  <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+	  <li MayRequire="Dubwise.DubsBadHygiene"> DBHThirst</li>
     </exclusionTags>
 	<geneClass>BetterPrerequisites.PGene</geneClass>
 	<displayCategory>BS_Deathless</displayCategory>
      <displayOrderInCategory>1</displayOrderInCategory>
 	 <canGenerateInGeneSet>false</canGenerateInGeneSet>
 	<biostatCpx>10</biostatCpx>
-    <biostatMet>5</biostatMet>
+    <biostatMet>15</biostatMet>
     <biostatArc>4</biostatArc>
     <hairTagFilter>
       <whitelist>true</whitelist>
@@ -97,33 +98,47 @@
       </tags>
     </beardTagFilter>
 	<forcedHeadTypes>
+	  <weight>50</weight> 
 	  <li>AotrsSkullHead2</li>
+	  <weight>50</weight> 
 	  <li>AotrsSkullNarrow2</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullHead3</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullNarrow3</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullHead4</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullNarrow4</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullHead5</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullNarrow5</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullHead6</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullNarrow6</li>
+	   <weight>10</weight> 
 	  <li>AotrsSkullHead7</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullNarrow7</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullHead8</li>
+	  <weight>10</weight> 
 	  <li>AotrsSkullNarrow8</li>
 	  </forcedHeadTypes>
-	  	<disablesNeeds>
-      <li>Rest</li>
-    </disablesNeeds>
+	  <disablesNeeds>
+			<li>Rest</li>
+	  </disablesNeeds>
 	<modExtensions>
-        <li Class="BetterPrerequisites.LockedNeed">
+        <!--li Class="BetterPrerequisites.LockedNeed">
 			<lockedNeeds>
 				<li>Food</li>
 				<li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
 				<li MayRequire="Dubwise.DubsBadHygienee">Bladder</li>
 			</lockedNeeds>
 			<value>0.90</value>
-		</li>
+		</li-->
 		<li Class="BetterPrerequisites.GeneExtension">
 			<disableFacialAnimations>true</disableFacialAnimations>
 			<applyBodyHediff>
@@ -266,7 +281,9 @@
       <li>MuscleParasites</li>
       <li>OrganDecay</li>
 	  <li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
+	  <li>ScanningSickness</li>
     </makeImmuneTo>
+	<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
 	<customEffectDescriptions>
       <li>Immune to vampirism</li>
       <li>Immune to zombification.</li>
@@ -295,20 +312,23 @@
     </biologicalAgeTickFactorFromAgeCurve>
     <exclusionTags>
 	  <!--li>BS_BleedRate</li> Attemted to replace with HAR bleedratefactor in Aotrs_SBSkeleton-->
-	  <li>Diet</li>
-      <li>Eats</li>
+	  <!--li>Diet</li>
+      <li>Eats</li-->
       <li>HairStyle</li>
       <li>Fur</li>
       <li>BeardStyle</li>
 	  <li>Immunity</li>
 	  <li>Sleep</li>
+	  <li>Food</li>
+	  <li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+	  <li MayRequire="Dubwise.DubsBadHygiene"> DBHThirst</li>
     </exclusionTags>
 	<geneClass>BetterPrerequisites.PGene</geneClass>
 	<displayCategory>BS_Deathless</displayCategory>
      <displayOrderInCategory>2</displayOrderInCategory>
 	 <canGenerateInGeneSet>false</canGenerateInGeneSet>
 	<biostatCpx>10</biostatCpx>
-    <biostatMet>6</biostatMet>
+    <biostatMet>16</biostatMet>
     <biostatArc>4</biostatArc>
     <hairTagFilter>
       <whitelist>true</whitelist>
@@ -328,16 +348,17 @@
 	  </forcedHeadTypes>
 	<disablesNeeds>
       <li>Rest</li>
+	  <li>Joy</li>
     </disablesNeeds>
 	<modExtensions>
-        <li Class="BetterPrerequisites.LockedNeed">
+        <!--li Class="BetterPrerequisites.LockedNeed">
 			<lockedNeeds>
 				<li>Food</li>
 				<li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
 				<li MayRequire="Dubwise.DubsBadHygienee">Bladder</li>
 			</lockedNeeds>
 			<value>0.90</value>
-		</li>
+		</li-->
 		<li Class="BetterPrerequisites.GeneExtension">
 			<disableFacialAnimations>true</disableFacialAnimations>
 			<thingDefSwap>Aotrs_AniSkeleton</thingDefSwap>

@@ -4,7 +4,7 @@
   <XenotypeDef>
     <defName>Aotrs_Lich</defName>
     <label>Spirit-Bound Lich</label>
-    <description>Spirit-Bound Liches are created by binding the soul to a dead body in a manner similar, but exclusive to, resurrection magic. Spirit-Bound Liches must always thus be created. The soul effectively "haunts" the body, in a fashion not unlike how haunted structures function, granting the Spirit-Bound Lich significantly greater abilities than a merely animated skeleton.</description>
+    <description>Spirit-Bound Liches are created by binding the soul to a dead body in a manner similar, but exclusive to, resurrection magic. Spirit-Bound Liches must always thus be created. The soul effectively "haunts" the body, in a fashion not unlike how haunted structures function, granting the Spirit-Bound Lich significantly greater abilities than a merely animated skeleton. As skeletal, undead beings, liches are immune to diseases and infections and they have no blood, nor a need for sleep. The "haunting" effect has some additional effects. Firstly, it allows them to eat (consumed material is effectively shunted into the etheral re-radiated as negative energy) and they rejuvenate from damage, albeit steadily. However, the tie also means do still feel pain; as pain exists for a good reason, however, this is not a disadvantage. Finally, they radiate cold. </description>
     <descriptionShort>A self-willed skeleton created by necromantic magic.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/SpiritBoundLich</iconPath>
 	<doubleXenotypeChances>
@@ -23,11 +23,11 @@
       <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.02</BS_Half_Jotun>
     </doubleXenotypeChances>
     <inheritable>false</inheritable>
-    <combatPowerFactor>2.0</combatPowerFactor>
+    <combatPowerFactor>1.5</combatPowerFactor>
     <genes>
 		<!--li>BS_Fast_TotalHealing</li-->
 		<li>BS_Deathlike</li>
-		<li>VU_Lesser_Unliving_Resilience</li>
+		<li>VU_Unliving_Resilience</li>
 		<li>AG_ColdImmunity</li>
 		<li>AG_ColdRadiating</li>
 		<li>VU_Libido_None</li>
@@ -36,6 +36,7 @@
 		<li>BS_Xenolocked</li>
 		<li>AG_DeadlyRaidPresence</li>
 		<li>Aotrs_Skeleform</li>
+		<li>BS_NoFood</li>
 		<!--li>GEG_Eyes_GlowingRed</li-->
 		<!--li>Aotrs_Eyeglows_Red</li-->
 	</genes>
@@ -48,7 +49,7 @@
     <descriptionShort>Elves.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/KalanothiElf</iconPath>
     <inheritable>true</inheritable>
-    <combatPowerFactor>2.0</combatPowerFactor>
+    <combatPowerFactor>1.0</combatPowerFactor>
     <genes>
 		<li>Ageless</li>
 		<li>BS_TrulyAgeless</li>
@@ -93,7 +94,7 @@
     <descriptionShort>Orcs.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/KalanothiOrc</iconPath>
     <inheritable>true</inheritable>
-    <combatPowerFactor>2.0</combatPowerFactor>
+    <combatPowerFactor>1.2</combatPowerFactor>
     <genes>
 		<li>Eyes_Red</li>
 		<li>Skin_Green</li>
@@ -139,7 +140,7 @@
     <descriptionShort>Orcs.</descriptionShort>
     <iconPath>UI/Icons/Xenotypes/KalanothiDwarf</iconPath>
     <inheritable>true</inheritable>
-    <combatPowerFactor>2.0</combatPowerFactor>
+    <combatPowerFactor>1.0</combatPowerFactor>
     <genes>
 			<li>StrongStomach</li>
 			<li>Immunity_Strong</li>
@@ -190,8 +191,8 @@
 		<li>BS_Xenolocked</li>
 		<li>BS_Learning_None</li>
 		<li>DarkVision</li>
-		<li>Neversleep</li>
 		<li>Aotrs_SkeleformAni</li>
+		<li>BS_NoFood</li>
 		</genes>
   </XenotypeDef>
   

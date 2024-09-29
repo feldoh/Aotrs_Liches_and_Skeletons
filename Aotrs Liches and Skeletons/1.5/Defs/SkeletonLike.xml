@@ -81,6 +81,10 @@
 			</blackEndoCategories>
     </raceRestriction>
     </alienRace>
+	<butcherProducts>
+            <Skull>1</Skull>
+			<BoneItem MayRequire="sihv.rombones">20</BoneItem>
+	</butcherProducts>
   </AlienRace.ThingDef_AlienRace>
 
   <AlienRace.ThingDef_AlienRace ParentName="Human">
@@ -157,6 +161,10 @@
 			</blackEndoCategories>
     </raceRestriction>
     </alienRace>
+	<butcherProducts>
+            <Skull>1</Skull>
+			<BoneItem MayRequire="sihv.rombones">20</BoneItem>
+	</butcherProducts>
   </AlienRace.ThingDef_AlienRace>
   
     <BodyDef>
@@ -1314,7 +1322,7 @@
     <everCurableByItem>false</everCurableByItem>
     <stages>
       <li>
-        <regeneration>50</regeneration>
+        <regeneration>75</regeneration>
       </li>
     </stages>
   </HediffDef>
