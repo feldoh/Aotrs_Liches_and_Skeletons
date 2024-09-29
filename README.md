@@ -30,6 +30,8 @@ Two factions, The Army of The Red spear faction (the titular Aotrs) and the Skel
 
 Starting scenario with three liches (a modified classic start).
 
+You should, in theory, now be ablt to butcher lich and skeleton corpses, which will return a skull and bones, if you have Rim of Madness Bones (recommended!)
+
 General notes:
 
 The colour of a skeleton is defined by hair colour. At the moment, it is set to a fixed value in the Gene defs, due to the only way I could get the eyeglows was to paint them on the forced head types. (I looked at the plausibility of doing facial animations, using just eyes (i.e. eyeglows), but ultimately concluded that it is beyond me. I toyed with a variant of eye colour genes - but that doesn't work with Facial animation, unfortunately.) If that problem could be fixed, bone-as-hair-colour would in theory allow liches to paint their bones (to diversify skeleton pawns).
@@ -43,7 +45,6 @@ Additional body parts (tails, tentacles) will not be skeletal. Thanks to the Gen
 
 No facial animation: As noted, beyond my capabilities to have the eyes animated, sorry.
 
-Butchering: You CAN butcher spirit-bound and animated skeleton corpses, but it won't return anything. (In theory, once they become rotten, if you have Rim of Madness Bones, you can butcher them as rotten corpse for some bones.) It was either that or be unable to get rid of the corpses. I have yet to find the coding to either a) make a recipe for butchering their corpses (requiring Rim of Madness Bones) to drop bones or b) make them instantly rotten.
 
 
 Future Possibilities:
