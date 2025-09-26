@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BookBase">
+    <defName>Aotrs_LichCreationTome</defName>
+    <label>lich creation tome</label>
+    <description>A tome that permenantly transforms the target into a lich.
+
+	(Warning: This changes the HAR race, so creatures that are already HAR races will become humanoid.)</description>
+    <descriptionHyperlinks>
+      <ThingDef>Aotrs_Lich</ThingDef>
+    </descriptionHyperlinks>
+    <stackLimit>10</stackLimit>
+    <graphicData>
+      <texPath>Things/Item/Book/LichCreationTome/LichCreationTome</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>1000</MarketValue>
+      <DeteriorationRate>5</DeteriorationRate>
+      <Mass>0.50</Mass>
+      <Flammability>0.7</Flammability>
+    </statBases>
+    <comps>
+       <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>0</useDuration>
+        <warmupMote>Mote_ResurrectAbility</warmupMote>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+	  <li Class="LichGenePatch.CompProperties_UseEffectXenoChange">
+          <targetXenotype>Aotrs_Lich</targetXenotype>
+      </li>
+	  <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+
+    <thingSetMakerTags>
+      <li>RewardStandardHighFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+
+
+</Defs>

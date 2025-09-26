@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Aotrs Liches and Skeletons</name>
+    <author>Aotrs Commander</author>
+	<supportedVersions>
+		<li>1.5</li>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>Aotrs.Faction</packageId>
+	<modIconPath IgnoreIfNoMatchingField="True">AotrsFactionModIcon</modIconPath>
+    <modDependencies>
+        <li>
+            <packageId>Ludeon.RimWorld.Biotech</packageId>
+            <displayName>Biotech</displayName>
+		</li>
+		<li>
+            <packageId>oskarpotocki.vanillafactionsexpanded.core</packageId>
+            <displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>sarg.alphagenes</packageId>
+			<displayName>Alpha Genes</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2891845502</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>erdelf.humanoidalienraces</packageId>
+			<displayName>Humanoid Alien Races</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>redmattis.betterprerequisites</packageId>
+			<displayName>Big and Small - Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2920751126</steamWorkshopUrl>
+		</li>
+
+		<li>
+			<packageId>redmattis.bigsmall.core</packageId>
+			<displayName>Big and Small - Genes &amp; More</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2920751126</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>redmattis.undead</packageId>
+			<displayName>Vampires, Demons, and the Undead</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2926556467</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>mlie.spookyscaryskeletons</packageId>
+			<displayName>Spooky Scary Skeletons (Continued)</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2989256051</steamWorkshopUrl>
+		</li>
+		<!--li>
+			<packageId>lts.geg</packageId>
+			<displayName>GEG_Eyes_GlowingRed</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3023336989</steamWorkshopUrl>
+		</li-->
+		</modDependencies>
+    <loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>ludeon.rimworld.anomaly</li>
+		<li>brrainz.harmony</li>
+		<li>sarg.alphagenes</li>
+		<li>RedMattis.BigSmall.Core</li>
+		<li>redmattis.undead</li>
+		<li>mlie.spookyscaryskeletons</li>
+    </loadAfter>
+	  <loadBefore>
+  </loadBefore>
+  <incompatibleWith>
+	</incompatibleWith>
+    <description>Add Aotrs-built xenotyopes</description>
+</ModMetaData>
