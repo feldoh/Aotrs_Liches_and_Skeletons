@@ -37,6 +37,27 @@
         <soundOnUsed>MechSerumUsed</soundOnUsed>
       </li>
       <li Class="CompProperties_UseEffectDestroySelf" />
+      <li Class="CompProperties_Book">
+          <nameMaker>Namer_TextBook</nameMaker>
+          <descriptionMaker>Description_SkillBook</descriptionMaker>
+          <ageYearsRange>100~200</ageYearsRange>
+          <openGraphic>
+              <texPath>Things/Item/Book/Textbook/Textbook_Open</texPath>
+              <graphicClass>Graphic_Multi</graphicClass>
+              <drawSize>0.7</drawSize>
+          </openGraphic>
+          <verticalGraphic>
+              <texPath>Things/Item/Book/Textbook/Textbook_Vertical</texPath>
+              <graphicClass>Graphic_Multi</graphicClass>
+              <addTopAltitudeBias>true</addTopAltitudeBias>
+          </verticalGraphic>
+          <doers>
+              <li Class="BookOutcomeProperties_GainSkillExp" />
+              <li Class="BookOutcomeProperties_GiveQuest">
+                  <questChance>0.01</questChance>
+              </li>
+          </doers>
+      </li>
     </comps>
 
     <thingSetMakerTags>
